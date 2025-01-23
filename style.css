@@ -7,42 +7,91 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-size: 1em;
+}
+
+html body{
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
-    min-height: 200px;
 }
 
 header > h1{
+font-variant: small-caps;
 font-family: "Passion One";
-font-size: 70px;
+font-size: 10vw;
 padding-top: 50px;
 }
 
 header > p{
-font-size: 1.2em;
-font-family: Arial, Helvetica, sans-serif;
+font-size: 1em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-bottom: 50px;
 }
 
-header > p > a{
+a{
     text-decoration: none;
     color: white;
+    font-weight: bolder;
     
 }
 
-header > p > a:hover{
+a:hover{
     text-decoration: underline;
 }
 
-div#estou{
-font-family: "Sriracha";
-font-size: 2em;
-width: 200px;
-padding: 25px 0px 0px 15px;
+section{
+    font-family: "Sriracha";
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
 
+section.normal{
+    background-color: white;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.imagem{
+    background-color: rgb(54, 52, 52);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.659);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.414);
+display: inline-block;
+text-shadow: 1px 1px 0px black
 
 }
 
+section#img1{
+    background-image:url(imagens/background001.jpg);
+    background-position: right center;
+   
+}
+
+
+section#img2{
+    background-image: url(imagens/background002.jpg);
+  
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding:5px;
+}
